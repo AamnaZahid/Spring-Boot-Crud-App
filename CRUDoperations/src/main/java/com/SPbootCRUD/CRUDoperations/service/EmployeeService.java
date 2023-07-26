@@ -19,12 +19,6 @@ public class EmployeeService {
     //Add Operation
     public String addEmployee(EmployeeDto employeeDto)
     {
-//        List<Employee> list = getAllEmployees();
-//        if(list.contains(employeeDto.getEmail()))
-//        {
-//            return "This Email Already Exits! Try with new one.";
-//        }
-//        else
         if(checkUnique(employeeDto.getEmail()))
         {
 
